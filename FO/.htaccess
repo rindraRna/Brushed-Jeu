@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule index-([a-zA-Z_-]+)  index.php?page=$1
+
+ErrorDocument 404 /S6/rojo/miniprojet/brushed/Brushed/Template/brushed/rewriting.php

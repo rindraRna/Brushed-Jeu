@@ -1,0 +1,16 @@
+RewriteEngine on
+RewriteRule index-modifierCat-([0-9]+)  _include/php/index2.php?page=modif&id=$1
+RewriteRule index-modifierJeu-([0-9]+)  _include/php/index2.php?page=modifJeu&id=$1
+RewriteRule index-([a-zA-Z_-]+)  _include/php/index2.php?page=$1
+RewriteRule insertCat  _include/php/insertCat.php
+RewriteRule insertJeu  _include/php/insertJeu.php
+RewriteRule supprimerCat-([0-9]+)  _include/php/supprimerCat.php?id=$1
+RewriteRule supprimerJeu-([0-9]+)  _include/php/supprimerJeu.php?id=$1
+RewriteRule traitModifCat-([0-9]+)  _include/php/traitModifCat.php?id=$1
+RewriteRule traitModifJeu-([0-9]+)  _include/php/traitModifJeu.php?id=$1
+RewriteRule traitLog  _include/php/traitLog.php
+RewriteRule loginOk  index.php
+RewriteRule login  index.php?err=0
+RewriteRule deconnexion  _include/php/dec.php
+
+ErrorDocument 404 /S6/rojo/miniprojet/brushed/Brushed/Template/brushed/rewriting.php
