@@ -3,7 +3,8 @@
         static $connect = null;
         if ($connect === null) 
         {
-            $connect = mysqli_connect('remotemysql.com', 'RgvuWSt4fb', 'MXj5KIpsBt', 'RgvuWSt4fb');
+            // $connect = mysqli_connect('remotemysql.com', 'RgvuWSt4fb', 'MXj5KIpsBt', 'RgvuWSt4fb');
+            $connect = mysqli_connect('localhost', 'root', 'root', 'jeu');
         }
         return $connect;
     }
